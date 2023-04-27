@@ -55,3 +55,5 @@ sudo apt-get update -y > /dev/null
 sudo apt-get install -y ca-certificates > /dev/null
 sudo cp /etc/gitlab-runner/certs/ca.crt /usr/local/share/ca-certificates/ca.crt
 sudo update-ca-certificates --fresh > /dev/null
+
+git config --global http.sslVerify false
